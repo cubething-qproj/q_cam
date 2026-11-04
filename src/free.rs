@@ -85,7 +85,7 @@ fn gate_input(
 }
 
 fn on_remove(
-    event: On<Remove, FreeCamera>,
+    event: On<Remove<FreeCamera>>,
     cameras: Query<&Camera>,
     mut cursor: Single<&mut CursorOptions, With<PrimaryWindow>>,
 ) {
